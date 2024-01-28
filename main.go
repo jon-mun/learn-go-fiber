@@ -12,7 +12,7 @@ func main() {
 	// Define a route
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(map[string]string{
-			"message": "Hello, Fiber3!",
+			"message": "Hello, Fiber!",
 		})
 	})
 
