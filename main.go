@@ -4,6 +4,7 @@ package main
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/jon-mun/learn-go-fiber/database"
+	"github.com/jon-mun/learn-go-fiber/router"
 )
 
 func main() {
@@ -19,6 +20,9 @@ func main() {
 			"message": "Hello, Fiber!",
 		})
 	})
+
+	// Setup routes
+	router.SetupRoutes(app)
 
 	// Start the server on port 8080
 	app.Listen(":8080")
